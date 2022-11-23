@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="Codescript.js" defer></script>
+    
+</head>
+<body >
+    <div class="header">
+        <h1 align="center">BANK ACCOUNT MANAGEMENT SYSTEM</h1>
+        <div class="side-nav">
+            <ul class="nav-links" >
+               <h2 align="center"><img src="Banking-System-in-India.webp"></h2>
+                <li onclick="getPageContent('createacc')"><button>Create Account</button><br><br></li>
+                <li onclick="getPageContent('deleteacc')"><button>Delete Account</button><br><br></li>
+                <li onclick="getPageContent('updateacc')"><button>Update Account</button><br><br></li>
+                <li onclick="getPageContent('deposit')"><button>Deposit Amount</button><br><br></li>
+                <li onclick="getPageContent('withdraw')"><button>Withdraw Amount</button><br><br></li>
+                <li onclick="getPageContent('allacc')"><button>Get All the account details</button><br><br></li>
+                <li onclick="getPageContent('singleacc')"><button>Get single account details</button><br><br></li>
+                <li onclick="getPageContent('transfer')"><button>Transfer Amount </button><br><br></li>
+                <li onclick="getPageContent('statements')"><button>Statements</button><br><br></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+        <div class="rightsection" >
+            <div id="content">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
